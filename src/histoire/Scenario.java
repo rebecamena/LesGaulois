@@ -1,9 +1,12 @@
 package histoire;
 
-public class Scenario {
+import personnages.Gaulois;
 
+public class Scenario {
+	
 	public static void main(String[] args) {
-		asterix.parlet();
+		Gaulois asterix = new Gaulois("Astérix", 8 );
+		asterix.prendreParole();
 	}
 
 }
