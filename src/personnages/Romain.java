@@ -5,9 +5,23 @@ public class Romain {
 	private int force;
 	
 	
+	
+	private boolean forcePositive() {
+		boolean positif = true; 
+		if ( force < 0) {
+			positif = false;
+		}
+		return positif;
+			
+			
+	}
+	
+	
 	public Romain(String nom, int force) {
 		this.nom = nom;
+		
 		this.force = force;
+		assert forcePositive();
 	}
 	
 	public String getNom() {
@@ -34,6 +48,11 @@ public class Romain {
 			parler("J'abandonne ...");
 		}
 		
+	}
+	
+	public static void main(String[] args) {
+		Romain minus = new Romain("Minus",-6);
+		System.out.println(minus.getNom() + " " +minus.getForce());
 	}
 	
 

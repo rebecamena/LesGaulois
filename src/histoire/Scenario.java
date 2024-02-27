@@ -21,7 +21,7 @@ public class Scenario {
 		asterix.prendreParole();
 		paronamix.booster(asterix);
 		asterix.parler("Bonjour à tous");
-		Romain minus = new Romain("Minus",6);
+		Romain minus = new Romain("Minus",-6);
 		minus.prendreParole();
 		minus.parler("UN GAU... UN GAUGAU...");
 		asterix.frapper(minus);
