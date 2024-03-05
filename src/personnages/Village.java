@@ -56,10 +56,10 @@ public class Village {
 		village.setChef(abraracourcix);
 		
 		village.ajouterHabitant(asterix);
-		/*Gaulois gaulois = village.trouverHabitant(1); 
+		/* Gaulois gaulois = village.trouverHabitant(1); 
 		System.out.println(gaulois);
 		 output : null */
-		/*Gaulois gaulois = village.trouverHabitant(0); 
+		/* Gaulois gaulois = village.trouverHabitant(0); 
 		System.out.println(gaulois);*/
 		// output : Gaulois [nom=Astérix, force=8, effetPotion=1]
 		// car on récup à travers un pointeur

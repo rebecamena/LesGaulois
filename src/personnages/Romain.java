@@ -41,17 +41,21 @@ public class Romain {
 	}
 	
 	public void recevoirCoup(int forceCoup) {
+		int test = force;
 		force -= forceCoup;
 		if (force > 0) {
 			parler("Aïe");
 		} else {
 			parler("J'abandonne ...");
 		}
+		assert force < test ; 
 		
 	}
 	
 	public static void main(String[] args) {
-		Romain minus = new Romain("Minus",-6);
+		Romain minus = new Romain("Minus",6);
+		System.out.println(minus.getNom() + " " +minus.getForce());
+		minus.recevoirCoup(4);
 		System.out.println(minus.getNom() + " " +minus.getForce());
 	}
 	
