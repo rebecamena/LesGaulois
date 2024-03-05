@@ -10,15 +10,15 @@ public class Scenario {
 	public static void main(String[] args) {
 		Gaulois asterix = new Gaulois("Astérix", 8 );
 		Gaulois obelix = new Gaulois("Obélix",25);
-		Druide paronamix = new Druide("Panoramix",5,10,1);
+		Druide paronamix = new Druide("Panoramix",5,10);
 		
 		paronamix.prendreParole();
 		paronamix.parler("Je vais aller préparer une petite potion...");
 		paronamix.preparerPotion();
 		paronamix.booster(obelix);
-		obelix.prendreParole();
+		//obelix.prendreParole();
 		obelix.parler("Par Bélénos, ce n'est pas juste !");
-		asterix.prendreParole();
+		//asterix.prendreParole();
 		paronamix.booster(asterix);
 		asterix.parler("Bonjour à tous");
 		Romain minus = new Romain("Minus",-6);

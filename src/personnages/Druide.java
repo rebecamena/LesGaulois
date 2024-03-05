@@ -8,11 +8,11 @@ public class Druide {
 	private int effetPotionMax;
 	private int forcePotion = 1;
 
-	public Druide(String nom, int effetPotionMin, int effetPotionMax, int forcePotion) {
+	public Druide(String nom, int effetPotionMin, int effetPotionMax) {
 		this.nom = nom;
 		this.effetPotionMin = effetPotionMin;
 		this.effetPotionMax = effetPotionMax;
-		this.forcePotion = forcePotion;
+		//this.forcePotion = forcePotion;
 		parler("Bonjour je suis le druide " + nom + " et ma potion peut aller d'une force " + effetPotionMin + " à "
 				+ effetPotionMax);
 	}
@@ -50,7 +50,7 @@ public class Druide {
 	}
 
 	public static void main(String[] args) {
-		Druide panoramix = new Druide("Panoramix",5,10,1);
+		Druide panoramix = new Druide("Panoramix",5,10);
 		panoramix.preparerPotion();
 		Gaulois obelix = new Gaulois("Obélix",10);
 		panoramix.booster(obelix);
